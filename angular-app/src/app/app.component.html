@@ -1,0 +1,13 @@
+<style>
+  .center {
+    text-align: center;
+  }
+</style>
+
+<div class="center">
+  <h1>Angular</h1>
+  
+  <input (input)="setItemName($event)"/>
+  <button (click)="addItem()">Add Item</button>
+  <p *ngFor="let item of items">{{item}}</p>
+</div>
